@@ -1,0 +1,25 @@
+dn: uid=cveret,ou=Users,dc=<nom-du-groupe>,dc=utc
+uid: cveret
+cn: Clément VÉRET
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+userPassword: {SSHA}<hash de mot de passe>
+loginShell: /bin/bash
+uidNumber: 600
+gidNumber: 10000
+homeDirectory: /home/cveret
+
+dn: cn=groupe_td,ou=Groups,dc=<nom-du-groupe>,dc=utc
+objectClass: posixGroup
+objectClass: top
+cn: groupe_td
+gidNumber: 10000
+
+dn: cn=groupe_secondaire,ou=Groups,dc=<nom-du-groupe>,dc=utc
+objectClass: posixGroup
+objectClass: top
+cn: groupe_secondaire
+gidNumber: 10001
+memberUid: cveret
