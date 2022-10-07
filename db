@@ -1,0 +1,9 @@
+[mysqld]
+binlog_format=ROW
+wsrep_provider=/usr/lib/libgalera_smm.so
+wsrep_cluster_name="cluster_sr06"
+wsrep_cluster_address="gcomm://10.0.50.250,10.0.50.252"
+wsrep_sst_method=rsync
+wsrep_on=ON
+wsrep_node_address="10.0.50.252"
+wsrep_node_name="node2"
