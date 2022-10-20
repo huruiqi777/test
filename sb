@@ -1,0 +1,62 @@
+dn: uid=a,ou=Users,dc=sr07a004,dc=utc
+uid: a
+cn: A
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+userPassword: {SSHA}Uj59H9R2yjxHXF9x8ABbry2EJhHq6b2I
+loginShell: /bin/bash
+uidNumber: 601
+gidNumber: 10000
+homeDirectory: /home/a
+
+dn: uid=b,ou=Users,dc=sr07a004,dc=utc
+uid: b
+cn: B
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+userPassword: {SSHA}Uj59H9R2yjxHXF9x8ABbry2EJhHq6b2I
+loginShell: /bin/bash
+uidNumber: 602
+gidNumber: 10000
+homeDirectory: /home/b
+
+dn: uid=c,ou=Users,dc=sr07a004,dc=utc
+uid: c
+cn: C
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+userPassword: {SSHA}Uj59H9R2yjxHXF9x8ABbry2EJhHq6b2I
+loginShell: /bin/bash
+uidNumber: 603
+gidNumber: 10000
+homeDirectory: /home/c
+
+dn: cn=groupe_3,ou=Groups,dc=sr07a004,dc=utc
+objectClass: posixGroup
+objectClass: top
+cn: groupe_3
+gidNumber: 10002
+memberUid: a
+
+dn: cn=groupe_4,ou=Groups,dc=sr07a004,dc=utc
+objectClass: posixGroup
+objectClass: top
+cn: groupe_4
+gidNumber: 10003
+memberUid: b
+
+
+dn: cn=groupe_5,ou=Groups,dc=sr07a004,dc=utc
+objectClass: posixGroup
+objectClass: top
+cn: groupe_5
+gidNumber: 10004
+memberUid: c
+
+
