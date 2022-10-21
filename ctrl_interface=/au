@@ -1,0 +1,9 @@
+ctrl_interface=/run/wpa_supplicant 
+ap_scan=0
+network={
+ scan_ssid=0 
+ key_mgmt=IEEE8021X eap=PEAP
+ identity="pers1" 
+ password="pers1" 
+ phase2="autheap=MSCHAPV2"
+}
